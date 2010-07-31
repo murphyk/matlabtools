@@ -3,15 +3,18 @@ function refreshMatlabToolsZip()
 % Requires an svn installation, (not just e.g. tortoise svn)
 % All files must be checked into svn
 %%
+fprintf('removing old zip file...'); 
+destZip = fullfile(matlabToolsRoot(), 'matlabTools.zip'); 
+if exist(destZip, 'file')
+    delete(destZip); 
+end
+fprintf('done\n');
 tmpRoot = tempname();
 mkdir(tmpRoot); 
 tmpPath = fullfile(tmpRoot, 'matlabTools');
 fprintf('Exporting code...'); 
 system(sprintf('svn export %s %s', matlabToolsRoot(), tmpPath));
-destZip = fullfile(matlabToolsRoot(), 'matlabTools.zip'); 
-if exist(destZip, 'file')
-    delete(destZip); 
-end
+
 fprintf('zipping..........');
 zip(destZip, fullfile(tmpRoot, 'matlabTools', '*.*')); 
 fprintf('done\ncleaning up......'); 
