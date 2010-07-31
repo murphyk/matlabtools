@@ -12,12 +12,12 @@ fprintf('done\n');
 tmpRoot = tempname();
 mkdir(tmpRoot); 
 tmpPath = fullfile(tmpRoot, 'matlabTools');
-fprintf('Exporting code...'); 
+fprintf('Exporting code..........'); 
 system(sprintf('svn export %s %s', matlabToolsRoot(), tmpPath));
 
-fprintf('zipping..........');
+fprintf('zipping.................');
 zip(destZip, fullfile(tmpRoot, 'matlabTools', '*.*')); 
-fprintf('done\ncleaning up......'); 
+fprintf('done\ncleaning up.............'); 
 system(sprintf('rmdir /Q /S %s', tmpPath));
 fprintf('done\nrefresh complete\n'); 
 end
