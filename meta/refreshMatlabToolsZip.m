@@ -13,7 +13,7 @@ if exist(destZip, 'file')
     delete(destZip); 
 end
 fprintf('zipping..........');
-zip(destZip, tmpPath); 
+zip(destZip, fullfile(tmpRoot, 'matlabTools', '*.*')); 
 fprintf('done\ncleaning up......'); 
 system(sprintf('rmdir /Q /S %s', tmpPath));
 fprintf('done\nrefresh complete\n'); 
