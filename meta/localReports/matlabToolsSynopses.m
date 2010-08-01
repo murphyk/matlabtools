@@ -30,7 +30,7 @@ wikiText =  [{
              ''
              ''
              ''
-             'This page lists the folders within MatlabTools. Click on the link to see the list of files in that folder, with a brief description. Click on the file to see its'
+             'This page lists the folders within `MatlabTools`. Click on the link to see the list of files in that folder, with a brief description. Click on the file to see its'
              'source code, including comments on how to use it.'
              ''
              }
