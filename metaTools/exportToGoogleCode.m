@@ -22,9 +22,9 @@ SetDefaultValue(5, 'exclusions'  , {'docs'});
 SetDefaultValue(6, 'createEmpty' , {}); 
 switch package
     case 'pmtk3'
-        exclusions = union(exclusions, {'data', 'external'}); 
+        exclusions = union(exclusions, {'data', 'external', 'matlabTools'}); 
         if isempty(createEmpty)
-            createEmpty = {'data', 'external'};
+            createEmpty = {'data', 'external', 'matlabTools'};
         end
 end
 %%    
