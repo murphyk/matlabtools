@@ -1,8 +1,9 @@
-function [X, knots] = splineBasis(x, K)
+function [X, knots] = splineBasis(x, K, knots)
 %% Spline basis function expansion
-if nargin < 2, K = 100; end
 
-knots = linspace(min(x), max(x), K);
+if nargin < 2, K = 100; end
+if nargin < 3, knots = linspace(min(x), max(x), K); end
+K = length(knots);
 d = length(knots);
 [junk, bind] = histc(x,knots);
 n = length(x);
