@@ -8,6 +8,8 @@ if nargin < 1, root = pmtk3Root(); end
 if nargin < 2
     excludedDirs = {'lightspeed2.3'  % use install_lightspeed or installLightspeedPMTK
                     'fastfit'        % use install_fastfit
+                    'west-mc'
+                    'oneProjectorCore'
                    };
 end
 cfiles = cfilelist(root);
@@ -21,7 +23,7 @@ for j=1:numel(cfiles)
     try
         cfile = cfiles{j};
         fname = fnameOnly(cfile);
-        if ~exist(fname, 'file') == 3
+        if ~(exist(fname, 'file') == 3)
             cd(fileparts(cfile));
             fprintf('Compiling %s\n',cfile);
             mex(cfile);
