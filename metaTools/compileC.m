@@ -11,11 +11,8 @@ function compileC(root, excludedNames)
 if nargin < 1, root = pmtk3Root(); end
 
 if nargin < 2
-    excludedNames = {'lightspeed2.3'  % use install_lightspeed or installLightspeedPMTK
-                    'fastfit'        % use install_fastfit
-                    'west-mc'
-                    'oneProjectorCore' % fails
-                   };
+    excludedNames = {'external'  % most external packages require custom mex linking 
+                    };
 end
 cfiles = cfilelist(root);
 for i=1:numel(excludedNames)
