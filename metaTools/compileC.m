@@ -1,23 +1,27 @@
-function compileC(root, excludedDirs)
+function compileC(root, excludedNames)
 % Try and compile all mexable c-files in the directory structure that
 % have not already been compiled. 
+%
+% excludedNames is a cell array of strings. A file is excluded if it
+% contains one of these strings in its absolute path name, thus it can be
+% the name of a file, directory, or parent directory. 
+%%
 % PMTKneedsMatlab 
 %%
 if nargin < 1, root = pmtk3Root(); end
 
 if nargin < 2
-    excludedDirs = {'lightspeed2.3'  % use install_lightspeed or installLightspeedPMTK
+    excludedNames = {'lightspeed2.3'  % use install_lightspeed or installLightspeedPMTK
                     'fastfit'        % use install_fastfit
                     'west-mc'
-                    'oneProjectorCore'
+                    'oneProjectorCore' % fails
                    };
 end
 cfiles = cfilelist(root);
-for i=1:numel(excludedDirs)
-   ex = cellfun(@(c)isSubstring(excludedDirs{i}, c), cfiles); 
+for i=1:numel(excludedNames)
+   ex = cellfun(@(c)isSubstring(excludedNames{i}, c), cfiles); 
    cfiles(ex) = []; 
 end
-
 
 for j=1:numel(cfiles)
     try
