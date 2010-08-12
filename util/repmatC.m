@@ -1,5 +1,5 @@
 function B = repmatC(varargin)
 %% A c version of repmat
-%#PMTKmex
+%PMTKmex
    B = repmat(varargin{:}); 
 end
