@@ -13,7 +13,11 @@ function S = partitionedSum(X, y, C)
 if nargin < 3
     C = nunique(y);
 end
-S = bsxfun(@eq, sparse(1:C).', y.')*X;
+if isOctave
+    S = bsxfun(@eq, (1:C).', y.')*X;
+else
+    S = bsxfun(@eq, sparse(1:C).', y.')*X;
+end
 
 
 end
