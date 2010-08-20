@@ -27,6 +27,10 @@ end
  
 pmtkRed = getConfigValue('PMTKred');
 R = [main', shadows', identical'];
+if isempty(R);
+   fprintf('No shadowed files were found.\n'); 
+   return; 
+end
 htmlTable('data', R, 'colNames', {'Main File', 'Shadows', 'Identical?'}, ...
     'colNameColors', {pmtkRed, pmtkRed, pmtkRed}, ...
     'title', 'Shadowed Files', ...
