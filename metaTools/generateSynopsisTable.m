@@ -4,7 +4,6 @@ function generateSynopsisTable(directory, outputFile, rootDir)
 %%
 if nargin < 2, outputFile = ''; end
 files        = filelist(directory, '*.m', true);
-%files        = setdiff(files, listPackageFiles(directory)); 
 files        = files(sortidx(lower(files))); 
 if isempty(files), return; end
 descriptions = colvec(cellfuncell(@helpline, files)); 
