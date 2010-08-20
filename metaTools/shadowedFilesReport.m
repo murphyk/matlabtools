@@ -1,6 +1,12 @@
 function R = shadowedFilesReport(rootDir)
 %% Generate an html report of the shadowd files in rootDir
-files     = filelist(rootDir, '*.m', true);
+% If rootDir is left blank, the report reflects all m-files on the path. 
+
+if nargin == 0
+    files = allMfilesOnPath(); 
+else
+    files = filelist(rootDir, '*.m', true);
+end
 main      = {};
 shadows   = {};
 identical = {};
@@ -25,7 +31,7 @@ for i=1:numel(files)
     shadows   = insertEnd(w(2:end), shadows);
 end
  
-pmtkRed = getConfigValue('PMTKred');
+pmtkRed = '#990000';
 R = [main', shadows', identical'];
 if isempty(R);
    fprintf('No shadowed files were found.\n'); 
