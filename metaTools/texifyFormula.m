@@ -6,7 +6,6 @@ function htmlLink = texifyFormula(str, fname, directory)
 % str      -   a valid latex formula, see example
 %             (we surround it with '$' signs automatically if you don't)
 %
-%
 % fname    -   a .png image of the compiled latex formula will be saved
 %              with this filename. Don't include the full path, just the name.
 %
