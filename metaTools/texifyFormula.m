@@ -17,7 +17,7 @@ function htmlLink = texifyFormula(str, fname, directory)
 % will live in the same folder as the image, e.g. <img src="formula.png">
 %
 %%
-% Tested on Matlab 2010a and might not work on earlier versions.
+% Tested on Matlab 2010a (win32) and might not work on earlier versions.
 %
 %%
 %PMTKneedsMatlab
