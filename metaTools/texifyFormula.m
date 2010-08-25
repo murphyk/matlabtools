@@ -56,18 +56,25 @@ txt = {
     '%%'
     };
 
+
+removeFirst = filelist(directory, 'texifySrc_*.png'); 
+for i=1:numel(removeFirst)
+   delete(fullfile(directory, removeFirst{i}));  
+end
+
 writeText(txt, fullfile(directory, 'texifySrc.m'));
 opts.outputDir = directory;
 opts.imageFormat = 'png';
 opts.evalCode = false;
 publish(fullfile(directory, 'texifySrc.m'), opts);
 list = filelist(directory, 'texifySrc*.png');
+assert(numel(list) == 1); 
 delete(fullfile(directory, 'texifySrc.m'));
 delete(fullfile(directory, 'texifySrc.html'));
 if exist(fname, 'file')
-    delete(fname);
+    delete(fullfile(directory, fname));
 end
-system(sprintf('rename %s %s', list{1}, fname));
+evalc('system(sprintf(''move /Y %s %s'', list{1}, fullfile(directory, fname)))');
 htmlLink = sprintf('<img src="%s">', fname);
 
 end
