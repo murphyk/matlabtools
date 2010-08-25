@@ -34,6 +34,7 @@ if nargin < 3
     directory = pwd;
 end
 
+
 if ~(str(1) == '$')
     str = ['$', str];
 end
@@ -55,17 +56,18 @@ txt = {
     '%%'
     };
 
-writeText(txt, 'texifySrc.m');
+writeText(txt, fullfile(directory, 'texifySrc.m'));
 opts.outputDir = directory;
 opts.imageFormat = 'png';
-publish('texifySrc.m', opts);
+opts.evalCode = false;
+publish(fullfile(directory, 'texifySrc.m'), opts);
 list = filelist(directory, 'texifySrc*.png');
-
-delete('texifySrc.m');
-delete('texifySrc.html');
+delete(fullfile(directory, 'texifySrc.m'));
+delete(fullfile(directory, 'texifySrc.html'));
 if exist(fname, 'file')
     delete(fname);
 end
 system(sprintf('rename %s %s', list{1}, fname));
 htmlLink = sprintf('<img src="%s">', fname);
+
 end
