@@ -1,7 +1,11 @@
-function link = googleCodeLink(fname, displayName)
+function link = googleCodeLink(fname, displayName, type)
 %% Return the html link to fname on a PMTK associated google code repository
 %
 %%
+if nargin < 3
+    type = 'html';
+end
+
 fname = which(fname); 
 if nargin < 2
     displayName = fnameOnly(fname); 
@@ -20,6 +24,12 @@ else
    return; 
 end
 link  = [googleRoot, strrep(fname(length(root)+1:end), '\', '/')];
-link = sprintf('<a href="%s">%s</a>',link, displayName);
+switch type
+    case 'html'
+        link = sprintf('<a href="%s">%s</a>',link, displayName);
+    case 'publish'
+        link = sprintf('<%s %s>',link, displayName);
+    case 'wiki'
+        link = sprintf('[%s %s]',link, displayName);
 end
 
