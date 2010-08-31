@@ -9,8 +9,8 @@ function [mu, se] = cvEstimate(fitFn, predictFn, lossFn, X, y,  Nfolds, varargin
 % Alternatively, you can explicitly specify the test folds
 % using testFolds(:,f) for the f'th fold
 % 
-% mu is expected error
-% se is standard error
+% mu is empirical estimate of expected loss
+% se is standard error of this estimate
 
 [testFolds, randomizeOrder] = process_options(varargin, ...
   'testFolds', [], 'randomizeOrder', false);
