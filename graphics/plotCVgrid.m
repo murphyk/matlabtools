@@ -24,7 +24,7 @@ ylabel('second model param');
 ndx1 = find(bestParams(1)==params1);
 ndx2 = find(bestParams(2)==params2);
 %title(sprintf('Color Denotes Score\nVal1: %f\nVal2: %f',bestParams(1), bestParams(2)));
-title(sprintf('Lowest cost at col = %d, row = %d', ndx1, ndx2));
+title(sprintf('Lowest cost at col = %d, row = %d', ndx2, ndx1));
 %axis tight;
 %box on;
 % warning('off','MATLAB:Axes:NegativeDataInLogAxis');
