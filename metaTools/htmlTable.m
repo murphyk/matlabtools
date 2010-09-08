@@ -231,9 +231,11 @@ else
 end;
 % HTML table
 HTML = [HTML sprintf('<TABLE BGCOLOR=%s ALIGN=%s CELLPADDING=%d VALIGN=%s <CAPTION ALIGN=%s><font size=%d>%s</font></CAPTION>',borderColor,tableAlign,cellPad,tableValign,captionLoc,captionFontSize,caption)];
+HTML = [HTML sprintf('\n\n')];  
 % Table title row
 if ~isempty(title)
     HTML = [HTML sprintf('<TR><TH COLSPAN=%g ALIGN=%s VALIGN=%s BGCOLOR=%s><font size=%d>%s</font></TH></TR>',szcols,titleAlign,titleValign,titleBarColor,titleFontSize,title)];
+    HTML = [HTML sprintf('\n\n')];
 end
 
 % cycle through pages
@@ -242,12 +244,14 @@ for ipage = 1:size(data,3),
     if (size(data,3) > 1),
         % display page line
         HTML = [HTML sprintf('<TR><TH COLSPAN=%g ALIGN=%s VALIGN=%s BGCOLOR=ivory>%s(:,:,%g)</TH></TR>',szcols,dataAlign,dataValign,MATname,ipage)]; %#ok
+    HTML = [HTML sprintf('\n\n')];  
     end;
     % Column labels
     if ~isempty(colNames),
         HTML = [HTML sprintf('<TR>')];  %#ok
         if (~isempty(rowNames) && length(colNames)<=size(page,2)),
             HTML = [HTML sprintf('<TD></TD>')]; %#ok
+            HTML = [HTML sprintf('\n\n')];  
         end;
         if (iscell(colNames)),
             for jj = 1:length(colNames),
@@ -257,15 +261,19 @@ for ipage = 1:size(data,3),
                     color = bgColor;
                 end
                 HTML = [HTML sprintf(['<TH BGCOLOR=%s ALIGN=%s VALIGN=%s><font size=%d>' colFormat '</font></TH>'],color,colNameAlign,colNameValign,colNameFontSize,[colNames{jj}])]; %#ok
+                HTML = [HTML sprintf('\n\n')];  
             end;
         else
             HTML = [HTML sprintf(['<TH BGCOLOR=%s ALIGN=%s VALIGN=%s><font size=%d>' colFormat '</font></TH>'],bgColor,colNameAlign,colNameValign,colNameFontSize,colNames)]; %#ok
+        HTML = [HTML sprintf('\n\n')];  
         end;
         HTML = [HTML sprintf('</TR>\n')]; %#ok
+        HTML = [HTML sprintf('\n\n')];  
     end;
     % format data rows
     for ii = 1:size(page,1),
         HTML = [HTML sprintf('<TR>\n')];  %#ok new row of data
+        HTML = [HTML sprintf('\n\n')];  
         % add row label to line
         if ~isempty(rowNames),
             if ii<=length(rowNames),
@@ -277,11 +285,14 @@ for ipage = 1:size(data,3),
                     end
                     
                     HTML = [HTML sprintf(['<TH BGCOLOR=%s ALIGN=%s VALIGN=%s ><font size=%d>' rowFormat '</font></TH>'],color,rowNameAlign,rowNameValign, rowNameFontSize,[rowNames{ii}])]; %#ok
+                    HTML = [HTML sprintf('\n\n')];  
                 else
                     HTML = [HTML sprintf(['<TH BGCOLOR=%s ALIGN=%s VALIGN=%s ><font size=%d>' rowFormat '</font></TH>'],bgColor,rowNameAlign,rowNameValign, rowNameFontSize,rowNames(ii))]; %#ok
+                    HTML = [HTML sprintf('\n\n')];  
                 end;
             else
-                HTML = [HTML sprintf('<TH></TH>')];  %#ok empty row
+              HTML = [HTML sprintf('<TH></TH>')];  %#ok empty row
+              HTML = [HTML sprintf('\n\n')];  
             end;
         end;
         
@@ -328,6 +339,7 @@ for ipage = 1:size(data,3),
                     else
                         HTML = [HTML sprintf(['<TD %s BGCOLOR=%s ALIGN=%s VALIGN=%s><font size=%d>' tFORMAT  '</font></TD>'],colspanText,dataColors{ii,jj},currentAlign,dataValign,dataFontSize,page{ii,jj})]; %#ok add data cell
                     end
+                    HTML = [HTML sprintf('\n\n')];
                 end
             end;
         else  % if data is no a cell array
@@ -340,6 +352,7 @@ for ipage = 1:size(data,3),
                         color = dataColors{ii,icol};
                     end
                     HTML = [HTML sprintf(['<TD BGCOLOR=#%6s ALIGN=%s VALIGN=%s><font size=%d>' dataFormat  '</font></TD>'],color,dataAlign,dataValign,dataFontSize,page(ii,icol))]; %#ok
+                    HTML = [HTML sprintf('\n\n')];
                 end;
             else
                 
@@ -350,13 +363,16 @@ for ipage = 1:size(data,3),
                         color = dataColors{ii,icol};
                     end
                     HTML = [HTML sprintf(['<TD BGCOLOR=%s ALIGN=%s VALIGN=%s><font size=%d>' dataFormat  '</font></TD>'],color,dataAlign,dataValign,dataFontSize,page(ii,icol))]; %#ok
+                    HTML = [HTML sprintf('\n\n')];
                 end
             end;
         end;
         HTML = [HTML sprintf('\n</TR>')]; %#ok close data row
+        HTML = [HTML sprintf('\n\n')];
     end;
 end;
 HTML = [HTML sprintf('</TABLE><br>')];  % close table
+HTML = [HTML sprintf('\n\n')];
 
 % Save to html file
 if (dosave),
