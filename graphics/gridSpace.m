@@ -4,6 +4,9 @@ function g = gridSpace(varargin)
 % g = gridSpace(1:10,1:10,1:10), then g = [a(:),b(:),c(:)];
 %
 
+% This file is from matlabtools.googlecode.com
+
+
     
 if nargin==1, varargin = repmat(varargin,[1 2]); end
 nout = numel(varargin);

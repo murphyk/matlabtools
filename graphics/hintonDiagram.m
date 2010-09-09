@@ -6,6 +6,9 @@ function hintonDiagram(w,max_m,min_m)
 %
 %    W = randn(4,5); hintonDiagram(W)
 
+% This file is from matlabtools.googlecode.com
+
+
 % Based on hintonw function from Mathworks neural net toolbox
 
 if nargin < 1,error('Not enough input arguments.');end

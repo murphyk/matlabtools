@@ -4,6 +4,9 @@ function X_ind = dummyEncoding(X, nStates)
 % These matrices are then concatinated horizontally forming an
 % n-by-sum(nStates) binary matrix.
 
+% This file is from matlabtools.googlecode.com
+
+
 [N, D] = size(X);
 if nargin < 2, 
     nStates = nunique(X);

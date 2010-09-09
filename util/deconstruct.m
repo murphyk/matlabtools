@@ -10,6 +10,9 @@ function varargout = deconstruct(S)
 % [mu, Sigma, pi] = deconstruct(model); % cannot be called from the command line.
 %
 % *** warning this function is not efficient ***
+
+% This file is from matlabtools.googlecode.com
+
 stack = dbstack('-completenames');
 if numel(stack) < 2
     error('This function cannot be called from the command prompt');

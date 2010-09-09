@@ -2,6 +2,9 @@ function [stream, cleanString] = text2stream(string)
 % Converts a charachter array to an array of integers
 % corresponding to the letters and spaces in the string.
 
+% This file is from matlabtools.googlecode.com
+
+
 string = lower(string);
 letters = double('a':'z');
 space  = double(' ');

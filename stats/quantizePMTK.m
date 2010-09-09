@@ -36,6 +36,9 @@ function quantized = quantizePMTK(vars, varargin)
 %     0.8544    2.0000
 %
 
+% This file is from matlabtools.googlecode.com
+
+
 %PMTKauthor  Stefan Schroedl
 %PMTKdate 3/16/2010
 %PMTKurl http://www.mathworks.com/matlabcentral/fileexchange/26981-feature-selection-based-on-interaction-information

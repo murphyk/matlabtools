@@ -18,6 +18,9 @@ function order = bestFirstElimOrder(G, node_sizes, stage)
 %      Intl. J. Approx. Reasoning, 11, 1994
 %
 
+% This file is from matlabtools.googlecode.com
+
+
 % Warning: This code is pretty old and could probably be made faster.
 
 n = length(G);

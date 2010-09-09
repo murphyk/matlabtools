@@ -1,6 +1,9 @@
 function xx = degexpand(x, deg, addOnes)
 % Expand input vectors to contain powers of the input features
 
+% This file is from matlabtools.googlecode.com
+
+
 [n,m] = size(x);
 if nargin < 3, addOnes = 0; end
 

@@ -24,6 +24,9 @@ function A = makehatch_plus(hatch,n,m)
 %
 %  See also: APPLYHATCH, APPLYHATCH_PLUS, APPLYHATCH_PLUSCOLOR, MAKEHATCH
 
+% This file is from matlabtools.googlecode.com
+
+
 %  By Ben Hinkle, bhinkle@mathworks.com
 %  This code is in the public domain. 
 

@@ -3,6 +3,9 @@ function classes = getClasses(varargin)
 % that are  on the Matlab path. You can optionally specify directories to
 % ignore. By default, the util and unitTests directories are ignored.
 % PMTKneedsMatlab 2008
+
+% This file is from matlabtools.googlecode.com
+
     
 [source,ignoreDirs,topOnly] = process_options(varargin,'source',pwd(),'ignoreDirs',{},'topOnly',false);
 

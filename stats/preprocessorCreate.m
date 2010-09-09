@@ -7,6 +7,9 @@ function [pp] = preprocessorCreate(varargin)
 % kernelFn - if not [], apply kernel fn to X  default []
 % poly - if not [], specify degree of polynomial expansion
 
+% This file is from matlabtools.googlecode.com
+
+
 [pp.standardizeX, pp.rescaleX, pp.kernelFn, pp.poly, pp.addOnes] = process_options(varargin, ...
   'standardizeX', false, 'rescaleX', false, 'kernelFn', [], 'poly', [], ...
   'addOnes', false);

@@ -1,5 +1,8 @@
 function requireImageToolbox()
 % Throw an error as the calling function if the image toolbox is not installed
+
+% This file is from matlabtools.googlecode.com
+
 if ~imagesToolboxInstalled
     if isOctave()
         error('Sorry this code requires the MATLAB image toolbox'); 

@@ -2,6 +2,9 @@ function statsToolboxDependencies(rootDir)
 % Generate an html table showing all of the stats toolbox functions used
 % by files in rootDir, (and subdirectories), along with the files that use
 % them. 
+
+% This file is from matlabtools.googlecode.com
+
 cd(rootDir);
 R = deptoolbox('stats');
 S = unique(vertcat(R.dependsOn{:}));

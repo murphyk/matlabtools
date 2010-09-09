@@ -25,6 +25,9 @@ function local = islocal(varargin)
 % See also, localMethods
 % PMTKneedsMatlab 2008
 
+% This file is from matlabtools.googlecode.com
+
+
 [methodName,className,allowAbstract] = process_options(varargin,'methodName','','className','','allowAbstract',false);
 if iscell(methodName)
     local = cellfun(@(mn)islocal(mn,className,allowAbstract),methodName);

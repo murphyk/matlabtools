@@ -2,6 +2,9 @@ function C = reachability_graph(G)
 % REACHABILITY_GRAPH C(i,j) = 1 iff there is a path from i to j in graph G
 % C = reachability_graph(G)
 
+% This file is from matlabtools.googlecode.com
+
+
 if 1
   % expm(G) = I + G + G^2 / 2! + G^3 / 3! + ...
   M = expm(double(full(G))) - eye(length(G));

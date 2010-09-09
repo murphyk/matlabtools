@@ -3,6 +3,9 @@ function A = squeezePMTK(A)
 % into colvecs. 
 %
 %%
+
+% This file is from matlabtools.googlecode.com
+
 A = squeeze(A); 
 if isvector(A)
     A = A(:);

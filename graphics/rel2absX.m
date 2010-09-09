@@ -1,6 +1,9 @@
 function xabs = rel2absX(xpos, ax)
 % Convert from axis-relative coordinates to absolute coordinates within the
 % figure. See also rel2absY.
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 2, 
     ax = gca;
 end

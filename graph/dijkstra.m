@@ -26,6 +26,9 @@ function [D,P] = dijkstra(A,s,t)
 %  (Based on Fig. 4.6 in Ahuja, Magnanti, and Orlin, Network Flows,
 %   Prentice-Hall, 1993, p. 109.)
 
+% This file is from matlabtools.googlecode.com
+
+
 % Copyright (c) 1998-2001 by Michael G. Kay
 % Matlog Version 5 22-Aug-2001
 

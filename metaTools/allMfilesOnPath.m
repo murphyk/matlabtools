@@ -1,5 +1,8 @@
 function m = allMfilesOnPath()
 % Return a list of all of the non-built-in .m files on the matlab path
+
+% This file is from matlabtools.googlecode.com
+
 p = mypath();
 m = {};
 for i=1:numel(p)

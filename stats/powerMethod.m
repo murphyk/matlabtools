@@ -1,6 +1,9 @@
 function [lam, u, iter] =  powerMethod(C)
 % Power method for finding the leading eigenvalue/ vector of a pd matrix
 
+% This file is from matlabtools.googlecode.com
+
+
 maxIter = 100;
 tol = 1e-10;
 converged = 0;

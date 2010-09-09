@@ -7,6 +7,9 @@ function sub = ind2subv(siz,index)
 %
 % See ind2subvBsxfunDemo for a timing comparison
 
+% This file is from matlabtools.googlecode.com
+
+
 
 n = length(siz);
 cum_size = cumprod(siz(:)');

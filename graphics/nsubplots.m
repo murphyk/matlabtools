@@ -3,6 +3,9 @@ function [ynum, xnum] = nsubplots(n)
 % while keeping the aspect ratio close to rectangular
 % but not too stretched
 
+% This file is from matlabtools.googlecode.com
+
+
 if n==2
   ynum = 2; xnum = 2;
 else

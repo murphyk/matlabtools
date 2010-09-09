@@ -4,6 +4,9 @@ function a = sub(b, ndx)
 % in matlab you have to go tmp = mean(rand(10),2); result = tmp(3); With
 % this function, you can go sub(mean(rand(10),2),3). Use subc for {}
 % indexing.
+
+% This file is from matlabtools.googlecode.com
+
 if isempty(b)
     a = []; return;
 end

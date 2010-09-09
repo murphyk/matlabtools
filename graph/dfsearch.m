@@ -20,6 +20,9 @@ function [pre, post, pred, cycle, d, f] = dfsearch(G, start, directed)
 %
 % See Cormen, Leiserson and Rivest, "An intro. to algorithms" 1994, p478.
 %%
+
+% This file is from matlabtools.googlecode.com
+
 n     = length(G);
 S     = zeros(1, n); % store node states, 0, 1, or 2
 T     = 0;           % time step

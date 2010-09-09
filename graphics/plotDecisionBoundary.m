@@ -15,6 +15,9 @@ function h = plotDecisionBoundary(X, Y, predictFcn, varargin)
 % predictFcn = @(Xtest) logregPredict(model, kernelRbfSigma(Xtest, X, rbfScale)); 
 % plotDecisionBoundary(X, y, predictFcn);
 %%
+
+% This file is from matlabtools.googlecode.com
+
     [stipple     , colors   , symbols,   markersize     , ...
      markerLineWidth, contourProps, newFigure, resolution ] = ...
         process_options( varargin                       , ...

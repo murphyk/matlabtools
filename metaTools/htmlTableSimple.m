@@ -12,6 +12,9 @@ function  htmlTableSimple(varargin)
 %
 % Examples
 %{
+
+% This file is from matlabtools.googlecode.com
+
 X = rand(2,3); colNames = {'a','b','ccc'}; rowNames={'r1','row 2'};
 htmlTableSimple('data', X, 'colNames', colNames, 'rowNames', rowNames)
 

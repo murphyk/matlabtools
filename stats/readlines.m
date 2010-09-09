@@ -1,6 +1,9 @@
 function lines = readlines(filename,maxlinelen)
 % Returns a cell array with the lines of the file converted to numbers (streams)
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin<2, maxlinelen=10000; end;
 lines = textread(filename,'%s','whitespace','\n','bufsize',maxlinelen);
 

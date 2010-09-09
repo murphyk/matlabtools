@@ -4,6 +4,9 @@ function [] = hintonScaleMulti(varargin)
 % Usage: hintonScaleMulti({X1,W1}, {args1}, {X2,W2}, {args2} ...)
 %PMTKauthor Cody Severinski
 
+% This file is from matlabtools.googlecode.com
+
+
 
 if nargin <= 2
    X = varargin{1}{1};

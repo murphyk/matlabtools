@@ -2,6 +2,9 @@ function insertCopyrightMatlabTools(fname)
 %% Insert a copyright notice into every matlabTools .m file
 % or into just the specified file.
 %%
+
+% This file is from matlabtools.googlecode.com
+
 text = 'This file is from matlabtools.googlecode.com';
 
 if nargin > 0

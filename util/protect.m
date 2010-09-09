@@ -5,6 +5,9 @@ function func = protect(varargin)
 % otherwise evaluates normally. The default guard is @isempty and the
 % default value is 0.
 
+% This file is from matlabtools.googlecode.com
+
+
 
 % Example:
 % cellfun(@mean,{ {}, 1:10, 2:20, 3:30, {} };  % this will fail because of the empty cells

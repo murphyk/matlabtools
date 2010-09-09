@@ -2,6 +2,9 @@ function S = stackedRandpd(D, K, P)
 %% Call randpd(D) K times and concatinate in pages
 % Add P to the diag of each matrix
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin < 3, P = 0; end
 
 S = zeros(D, D, K); 

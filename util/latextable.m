@@ -61,6 +61,9 @@ function latextable(X,varargin)
 % APPPYPREF applies the last used directory and property settings
 %__________________________________________________________________________
 
+% This file is from matlabtools.googlecode.com
+
+
 % Copyright (c) 2009, Andrew E. Slaughter
 % All rights reserved.
 % Redistribution and use in source and binary forms, with or without

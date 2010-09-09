@@ -8,6 +8,9 @@ function image_rgb(M)
 % If we use imagesc, the mapping from color to number depends on the image.
 % eg M=sampleDiscrete(normalize(ones(1,5)), 10,10); image_rgb(M);colorbar
 
+% This file is from matlabtools.googlecode.com
+
+
 cmap = [1 0 0; % red
 	0 1 0; % green
 	0 0 1; % blue

@@ -13,6 +13,9 @@ function d = cellDepth(c)
 % ans =
 %      3
 
+% This file is from matlabtools.googlecode.com
+
+
 if isempty(c) || ~iscell(c),
     d = 0;
 else

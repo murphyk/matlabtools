@@ -4,6 +4,9 @@ function C = gatherTagText(R, tag, fileNdx)
 % R.files{fileNdx(i)}, and is blank if the file has not such tag. 
 % If fileNdx is not specified, all files are searched. 
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 3
     fileNdx = 1:numel(R.files); 
 end

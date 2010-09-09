@@ -3,6 +3,9 @@ function matlabToolsAuthorLocReport()
 % Create a table of authors and the total lines of code contributed
 % PMTKneedsMatlab
 %%
+
+% This file is from matlabtools.googlecode.com
+
 dest = fullfile(matlabToolsRoot(), 'docs', 'authors');
 color  = ' #990000';
 R      = tagReport(); % everything you ever wanted to know about tags

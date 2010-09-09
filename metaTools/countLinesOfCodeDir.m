@@ -3,6 +3,9 @@ function n = countLinesOfCodeDir(d, excludeComments, recursive, filemask)
 % If recursive is true, (default) include subdirectories as well. 
 % 
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin < 2, excludeComments = true; end
 if nargin < 3, recursive = true; end
 if nargin < 4, filemask = {'*.m', '*.c', '*.cpp', '*.h', '*.py'}; end

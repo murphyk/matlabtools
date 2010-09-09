@@ -4,6 +4,9 @@ function str = getTagText(f, tag)
 % If f is a cell array of file names, repeat for each and return a cell
 % array of strings.
 
+% This file is from matlabtools.googlecode.com
+
+
 if iscell(f)
     str = cellfuncell(@(ff)getTagText(ff, tag), f);
     return;

@@ -1,6 +1,9 @@
 function biplotPmtk(C, varargin)
 %% Replacement for the stats toolbox biplot function
 
+% This file is from matlabtools.googlecode.com
+
+
 [S, labels, pos] = process_options(varargin, ...
     'scores'    , []    , ...
     'varlabels' , []    , ...

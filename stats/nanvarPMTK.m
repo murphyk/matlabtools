@@ -2,6 +2,9 @@ function v = nanvarPMTK(X, w, dim)
 % Replacement for the stats toolbox nanvar function
 % However, unlike nanvar, this does not support weighted variance.
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin < 2
     w = 0;
 end

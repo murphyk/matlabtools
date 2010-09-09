@@ -23,6 +23,9 @@ function S = multiLineString(varargin)
 %
 %%
 
+% This file is from matlabtools.googlecode.com
+
+
 stack = dbstack('-completenames');
 if numel(stack) < 2
     error('This function cannot be called from the command prompt');

@@ -1,4 +1,7 @@
 %% Clear and close everything
+
+% This file is from matlabtools.googlecode.com
+
 close all;
 close all hidden;
 fclose all;

@@ -4,6 +4,9 @@ function H = matrixEntropy(v, scale)
 %
 % H = entropy(v,1) means we scale the result so that it lies in [0,1]
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin < 2, scale = 0; end
 
 v = v + (v==0);

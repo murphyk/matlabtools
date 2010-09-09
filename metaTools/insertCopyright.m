@@ -7,6 +7,9 @@ function insertCopyright(noticeText, file, verbose)
 % (comment free) line, before and after. If a file already
 % has exactly the same comment notice, it is not written twice.
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 3, verbose = true; end
 if iscell(noticeText)
     noticeText = [{''}; {'%% '}; noticeText; {'%%'}; {''}];

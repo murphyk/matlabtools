@@ -5,6 +5,9 @@ function removeFromSystemPath(keyword)
 %% Example
 % removeFromSystemPath('graphviz')
 %%
+
+% This file is from matlabtools.googlecode.com
+
 p = winpath(); 
 mask = cellfun(@(c)isSubstring(keyword, c, true), p); 
 cellfun(@(c)fprintf('removing %s\n', c), p(mask)); 

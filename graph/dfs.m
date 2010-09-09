@@ -21,6 +21,9 @@ function [d, pre, post, cycle, f, pred] = dfs(adj_mat, start, directed)
 %
 % See Cormen, Leiserson and Rivest, "An intro. to algorithms" 1994, p478.
 
+% This file is from matlabtools.googlecode.com
+
+
 n = length(adj_mat);
 
 global white gray black color

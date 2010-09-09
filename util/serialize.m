@@ -30,6 +30,9 @@ function m = serialize(v, n)
 %
 %   See also mat2str, num2str, int2str, sprintf, class, eval
 
+% This file is from matlabtools.googlecode.com
+
+
 %% AUTHOR    : Joger Hansegard 
 %% $DATE     : 29-Jun-2006 17:37:49 $ 
 %% $Revision : 1.00 $ 

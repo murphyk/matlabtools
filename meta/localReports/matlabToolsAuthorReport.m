@@ -1,6 +1,9 @@
 function matlabToolsAuthorReport()
 %% Generate the html contributing author report
 % PMTKneedsMatlab
+
+% This file is from matlabtools.googlecode.com
+
 dest            = fullfile(matlabToolsRoot(), 'docs', 'authors');
 outputFile      = fullfile(dest, 'fileAuthorsMt.html');
 excludedAuthors = {'Matt Dunham', 'Kevin Murphy'}; 

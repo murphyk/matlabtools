@@ -1,5 +1,8 @@
 function [xtrain, ytrain, xtest, ytestNoisefree, ytestNoisy, sigma2] = polyDataMake(varargin)
 %% Sample Data
+
+% This file is from matlabtools.googlecode.com
+
 [sampling, deg, n] = process_options(varargin, ...
     'sampling', 'sparse', 'deg', 3, 'n', 21);
 setSeed(0);

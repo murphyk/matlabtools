@@ -15,6 +15,9 @@ function  [trainfolds, testfolds] = Kfold(N, K, randomize)
 % (last fold gets all the left over so has different length)
 %
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin < 3, randomize = 0; end
 if randomize
     setSeed(0);

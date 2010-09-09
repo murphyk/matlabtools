@@ -14,6 +14,9 @@ function p = isprefix(short, long)
 %isprefix('test_',{'test_MvnDist','test_DiscreteDist','UnitTest'})
 %ans =
 %     1     1     0
+
+% This file is from matlabtools.googlecode.com
+
     error(nargchk(2,2,nargin));
     if ischar(long)
         p = strncmp(long,short,length(short));

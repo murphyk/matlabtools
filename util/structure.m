@@ -17,6 +17,9 @@ function S = structure(varargin)
 %        pi: [1x10 double]
 %%
 
+% This file is from matlabtools.googlecode.com
+
+
 for i=1:nargin
     S.(inputname(i)) = varargin{i};
 end

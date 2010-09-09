@@ -16,6 +16,9 @@ function out = wwhich(s1,s2)
 %PMTKauthor Lucio Andrade
 %PMTKurl http://www.mathworks.com/matlabcentral/files/1266/wwhich.m
 
+% This file is from matlabtools.googlecode.com
+
+
 pathseparator = pathsep;
 
 if nargin<1

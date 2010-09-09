@@ -7,6 +7,9 @@ function [order, chordal, cliques, numpa] = perfectElimOrder(G, initNode)
 %
 % See perfectElimDemo for an example
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin < 2, initNode = 1; end
 G     = logical(G); 
 G     = setdiag(G, true); % for chordality checking

@@ -5,6 +5,9 @@ function [h, p, c] = plotContour(fn, xyRange, varargin)
 % All other args (varargin) are passed directly to the contour function,
 % except for 'npoints', which is by default 100 and 'ncontours'.
 %%
+
+% This file is from matlabtools.googlecode.com
+
 [npoints, ncontours, args] = process_options(varargin, 'npoints', 100, 'ncontours', []);
 if nargin < 2
     xyRange = [-10 10 -10 10];

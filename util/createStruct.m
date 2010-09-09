@@ -4,6 +4,9 @@ function s = createStruct(names, values)
 % as in struct('name1',val1,'name2',val2,...) - here you can pass in the
 % names and values as two cell arrays. If values is not specified, it just
 % assigns {}.
+
+% This file is from matlabtools.googlecode.com
+
 s = struct;
 if(nargin < 2)
     for i=1:numel(names);

@@ -5,5 +5,8 @@ function x = rowvec(x)
 % way. Suppose f(a,b,c) returns a column vector, matlab will not let you write
 % f(a,b,c)(:)' - you would have to first store the result. With this function you
 % can write rowvec(f(a,b,c)) and be assured that the result is a row vector.   
+
+% This file is from matlabtools.googlecode.com
+
     x = x(:)';
 end

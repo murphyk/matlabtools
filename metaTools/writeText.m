@@ -13,6 +13,9 @@ function writeText(text, fname, append)
 % it exists, is completely overwritten by the new text.
 %
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if ischar(text)
     text = mat2cellRows(text);
 end

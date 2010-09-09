@@ -2,6 +2,9 @@ function [functionList, classList] = dependsOn(mfile, dirRoot)
 % Find dependencies on a directory structure for a single file
 %%
 
+% This file is from matlabtools.googlecode.com
+
+
 dependencies = depfunTB(mfile);
 
 functionList = {};

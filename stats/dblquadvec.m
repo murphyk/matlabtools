@@ -13,6 +13,9 @@ function q = dblquadvec(f, varargin)
 %PMTKauthor Aki Vehtari
 %PMTKurl http://www.lce.hut.fi/teaching/S-114.2601/ex/dblquadvec.m
 
+% This file is from matlabtools.googlecode.com
+
+
 % Based on quadvec by Loren Shure
 % http://www.mathworks.com/matlabcentral/fileexchange/loadFile.do?objectId=10667&objectType=file
 

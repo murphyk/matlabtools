@@ -58,6 +58,9 @@ function M = unwrapCell(C)
 % ans = 
 %    [5x7 double]    [4x9 double]
 
+% This file is from matlabtools.googlecode.com
+
+
 if isempty(C), M = []; return; end
 if ~iscell(C), M = C;  return; end
 if numel(C) == 1, M = C{1}; return; end

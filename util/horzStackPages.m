@@ -5,6 +5,9 @@ function A = horzStackPages(A)
 % (See also vertStackPages)
 % 
 %%
+
+% This file is from matlabtools.googlecode.com
+
 [N, D, K] = size(A); 
 A = reshape(A(:), [N, D*K]); 
 end

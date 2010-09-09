@@ -7,6 +7,9 @@ function Tbig = bsxTable(fn, Tbig, Tsmall, bigdom, smalldom)
 %
 %
 %%
+
+% This file is from matlabtools.googlecode.com
+
 smallsz = sizePMTK(Tsmall);
 if isequal(bigdom, smalldom)
     Tbig = fn(Tbig, Tsmall);

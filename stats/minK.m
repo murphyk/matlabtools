@@ -8,6 +8,9 @@ function [val,idx] = minK(A,k)
 % O(n*k) time. Therefore we pick the appropriate method based on relative
 % size of k and log(n).
 
+% This file is from matlabtools.googlecode.com
+
+
 sz = size(A);
 if(sz(2) == 1)
     A = A';

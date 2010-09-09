@@ -41,6 +41,9 @@ function drawGraph(adj, varargin)
 % 
 % Last updated 7 June 2006
 %
+
+% This file is from matlabtools.googlecode.com
+
 warning('deprecated: please use drawNetwork'); 
 if 0
 adj = zeros(5,5);

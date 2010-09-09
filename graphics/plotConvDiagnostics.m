@@ -1,6 +1,9 @@
 function plotConvDiagnostics(X,  ttl)
 % Plot trace plot, smoothed trace plot, and ACF of 1d quantity
 % X(samples, chain/seed)
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 2, ttl = ''; end
 nseeds = size(X,2);
 colors = {'r', 'g', 'b', 'k'};

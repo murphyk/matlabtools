@@ -2,6 +2,9 @@ function link = googleCodeLink(fname, displayName, type)
 %% Return the html link to fname on a PMTK associated google code repository
 %
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 3
     type = 'html';
 end

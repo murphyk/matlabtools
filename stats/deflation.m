@@ -3,6 +3,9 @@ function [V,lambda] = deflation(C, K)
 % using power method combined with successive deflation
 % Based on code by Mark Girolami
 
+% This file is from matlabtools.googlecode.com
+
+
 d = length(C);
 V = zeros(d,K);
 for j=1:K

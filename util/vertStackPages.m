@@ -5,6 +5,9 @@ function A = vertStackPages(A)
 %
 % 
 %%
+
+% This file is from matlabtools.googlecode.com
+
 [N, D, K] = size(A); 
 
 A = reshape(colvec(permute(A, [1 3 2])), [N*K, D]); 

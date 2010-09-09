@@ -9,6 +9,9 @@ function [mi, nmi] = mutualInfoAllPairsDiscrete(X, values, weights)
 % O(N d^2) time to compute p(i,j), N=#cases, d=#nodes.
 % O(d^2 K^2) time to compute MI, K=#states
 
+% This file is from matlabtools.googlecode.com
+
+
 %PMTKauthor Sam Roweis
 %PMTKmodified Kevin Murphy
 

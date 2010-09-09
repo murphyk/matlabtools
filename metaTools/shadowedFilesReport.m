@@ -2,6 +2,9 @@ function R = shadowedFilesReport(rootDir)
 %% Generate an html report of the shadowd files in rootDir
 % If rootDir is left blank, the report reflects all m-files on the path. 
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin == 0
     files = allMfilesOnPath(); 
 else

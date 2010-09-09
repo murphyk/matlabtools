@@ -10,6 +10,9 @@ function [X, mu, sigma2] = polyBasis(x, d, mu, sigma2)
 % function [X] = polyBasis(x, d, mu, sigma2)
 % We standardize x first using specified  mean and variance
 
+% This file is from matlabtools.googlecode.com
+
+
 x = x(:);
 if nargout > 1
   [x, mu,  sigma2] = standardize(x);

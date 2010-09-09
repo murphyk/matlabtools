@@ -3,6 +3,9 @@ function [I, map] = imageToVector(img)
 % preserving information.
 % Use vectorToImage to convert back
 
+% This file is from matlabtools.googlecode.com
+
+
 [M, N, d] = size(img); 
 
 nstates0 = max(img(:)); 

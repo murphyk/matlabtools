@@ -8,6 +8,9 @@ function f = filenames(files)
 % f = 
 %    'bar1'    'bar2'
 %% 
+
+% This file is from matlabtools.googlecode.com
+
 if iscell(files)
     f = cellfuncell(@(f)argout(2, @fileparts, f), files); 
 else

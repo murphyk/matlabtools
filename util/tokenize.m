@@ -18,6 +18,9 @@ function tokens = tokenize(str, delimiter)
 %     'panama!'
 %
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if(nargin < 2)
     delimiter = ' ' ;
 end

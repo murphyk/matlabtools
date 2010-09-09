@@ -6,6 +6,9 @@ function [y, L] = normalizeLogspace(x)
 % eg [logPost, L] = normalizeLogspace(logprior + loglik)
 %    post = exp(logPost);
 %%
+
+% This file is from matlabtools.googlecode.com
+
 L = logsumexp(x, 2);
 %y = x - repmat(L, 1, size(x,2));
 y = bsxfun(@minus, x, L);

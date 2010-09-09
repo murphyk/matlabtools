@@ -6,6 +6,9 @@ function count = computeCounts(X, sz)
 % Example: to compute a 2x2 contingency table on binary data
 % use C = computeCounts([X(:) Y(:)]+1, [2 2]);
 %%
+
+% This file is from matlabtools.googlecode.com
+
 assert(length(sz) == size(X, 2));
 P = prod(sz);
 indices = subv2ind(sz, X);

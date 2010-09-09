@@ -16,6 +16,9 @@ function varargout = compileAndRun(fname,varargin)
 %
 % PMTKneedsMatlab 2008
 %%
+
+% This file is from matlabtools.googlecode.com
+
     
     if(~exist('emlmex','file'))
         error('emlmex could not be found');

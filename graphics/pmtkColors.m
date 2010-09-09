@@ -2,6 +2,9 @@ function [colors, colorMap] = pmtkColors()
     
 % http://www.mathworks.com/access/helpdesk/help/techdoc/ref/colorspec.html
 
+% This file is from matlabtools.googlecode.com
+
+
     lightblue = [55 155 255] / 255;
     orange    = [255 128 0   ] / 255;
     green     = [0   255 64  ] / 255;

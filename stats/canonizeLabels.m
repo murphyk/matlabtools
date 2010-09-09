@@ -33,6 +33,9 @@ function [canonized, support] = canonizeLabels(labels,support)
 % To make 0,1 use canonizeLabels(y)-1
 % To make -1,+1 use (2*(canonizeLabels(y)-1))-1
 
+% This file is from matlabtools.googlecode.com
+
+
 
 
 [nrows,ncols] = size(labels);

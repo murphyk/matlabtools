@@ -20,6 +20,9 @@ function [y, initSupport] = setSupport(labels, newSupport, initSupport)
 %   'yes'    'no'    'maybe'    'maybe'    'no'
 %
 
+% This file is from matlabtools.googlecode.com
+
+
     if nargin > 2 && isequal(newSupport, initSupport)
         y = labels;
         return;

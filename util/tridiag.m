@@ -48,6 +48,9 @@ function D = tridiag(A, B, C, useSparse)
 %
 % Kevin Murphy, 4 June 2006
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin == 1
   if issparse(A)
     D = mkFromVectorsSparse(diag(A),diag(A,1),diag(A,-1));

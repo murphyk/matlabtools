@@ -2,6 +2,9 @@ function tf = isfunction(fname)
 % Return true if the specified file is a matlab function, (not a script).
 %
 
+% This file is from matlabtools.googlecode.com
+
+
 if endswith(fname, '.m')
     fname = fname(1:end-2);
 end

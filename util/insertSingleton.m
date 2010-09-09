@@ -17,6 +17,9 @@ function A = insertSingleton(A, d)
 % assert(isequal(A(:), As(:))); 
 % 
 %%
+
+% This file is from matlabtools.googlecode.com
+
 nd   = ndims(A); 
 perm = [1:d-1, nd+1, d:nd];
 A    = permute(A, perm); 

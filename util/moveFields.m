@@ -1,6 +1,9 @@
 function [S1, S2] = moveFields(fields, S1, S2)
 %% Move fields from struct S1 to struct S2
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin < 3
     S2 = struct();
 end

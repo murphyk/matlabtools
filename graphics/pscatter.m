@@ -8,6 +8,9 @@ function  pscatter(X,varargin)
 %      default {'.'} for n>100, {'o'} for  n<100
 % y: n*1 optional class labels, default ones(n,1)
 
+% This file is from matlabtools.googlecode.com
+
+
 %---------------------------------------------------
 % NOTE: uses function histo()  and process_options()
 %---------------------------------------------------

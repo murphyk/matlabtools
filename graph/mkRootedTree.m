@@ -1,6 +1,9 @@
 function T = mkRootedTree(adjMat, root)
 % Adjmat should be the adjmat of an undirected tree
 % All arrows point away from the root (root defaults to 1)
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 2, root = 1; end
 n = length(adjMat);
 T = sparse(n,n); % not the same as T = sparse(n) !

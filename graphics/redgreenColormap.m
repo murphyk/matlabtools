@@ -21,6 +21,9 @@ function p = redgreencolormap(m,varargin)
 %
 %   See also CLUSTERGRAM, COLORMAP, COLORMAPEDITOR.
 
+% This file is from matlabtools.googlecode.com
+
+
 %   Copyright 2003-2006 The MathWorks, Inc.
 %   $Revision: 1.3.4.4 $  $Date: 2006/06/16 20:07:45 $
 

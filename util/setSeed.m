@@ -3,6 +3,9 @@ function setSeed(seed)
 % We don't use the new RandStream class for compatibility with Octave and
 % older versions of Matlab. In the future it may be necessary to test the
 % Matlab version and call the appropriate code. 
+
+% This file is from matlabtools.googlecode.com
+
 global RNDN_STATE  RND_STATE
 if nargin == 0
     seed = 0; 

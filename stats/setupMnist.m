@@ -7,6 +7,9 @@ function [Xtrain,ytrain,Xtest,ytest] = setupMnist(varargin)%binary, Ntrain, Ntes
 % keepSparse - if true, do not cast to double [true]
 % classes - specify which classes you want train/test data for [0:9]
 
+% This file is from matlabtools.googlecode.com
+
+
 [binary,Ntrain,Ntest,keepSparse,classes] = process_options(varargin,...
   'binary',false,'ntrain',60000,'ntest',10000,'keepSparse',true,'classes',0:9);
         

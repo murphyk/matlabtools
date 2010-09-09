@@ -4,6 +4,9 @@ function addtosystempath(p)
 % Do not include path delimiters like ; or : .
 % Example:
 % addtopath('C:\Users\matt\bin');
+
+% This file is from matlabtools.googlecode.com
+
     
     if isempty(getenv('PATH')) || all(cellfun(@(c)isempty(c),strfind(tokenize(getenv('PATH'),pathsep()),p)));
         setenv('PATH', [getenv('PATH'), pathsep(),p]);

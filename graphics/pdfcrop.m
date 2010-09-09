@@ -14,6 +14,9 @@ function pdfcrop(h,hborder,vborder)
 %'vborder' the vertical border, (default = 0.1 inches)
 %
 %%
+
+% This file is from matlabtools.googlecode.com
+
     
     if(nargin <= 1)
         hborder = 0.1; vborder = 0.1;

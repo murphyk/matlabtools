@@ -7,6 +7,9 @@ function [P] = multiSigmoid(X, w)
 %
 % Based on code by Balaji Krishnapuram
 
+% This file is from matlabtools.googlecode.com
+
+
 [N,d]=size(X);        %X->Nxd
 W=reshape(w,d,[]);
 

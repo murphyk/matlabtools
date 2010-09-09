@@ -86,6 +86,9 @@ function [im_hatch,colorlist] = applyhatch_pluscolor(h,patterns,CvBW,Hinvert,col
 %
 %  See also: APPLYHATCH, APPLYHATCH_PLUS, MAKEHATCH, MAKEHATCH_PLUS
 
+% This file is from matlabtools.googlecode.com
+
+
 %  By Ben Hinkle, bhinkle@mathworks.com
 %  This code is in the public domain. 
 

@@ -12,6 +12,9 @@ function out = prepareArgs(args)
 % This is equivalent to calling 
 % foo('maxiter', 100, 'verbose', true)
 
+% This file is from matlabtools.googlecode.com
+
+
 if isstruct(args)
     out = interweave(fieldnames(args), struct2cell(args));
 elseif ~isempty(args) && isstruct(args{1})

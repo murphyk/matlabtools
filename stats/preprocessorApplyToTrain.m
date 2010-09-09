@@ -2,6 +2,9 @@ function [preproc, X] = preprocessorApplyToTrain(preproc, X)
 % Apply Preprocessor to training data and store updated
 % parameters inside pp object for use at test time
 
+% This file is from matlabtools.googlecode.com
+
+
 % For backwards compatibility, we replicate the
 % behavior of preprocessorCreate
 if ~isfield(preproc, 'standardizeX'), preproc.standardizeX = false; end

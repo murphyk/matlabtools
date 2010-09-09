@@ -17,6 +17,9 @@ function f = whoDependsOnToolbox(TB, recache)
 %% See also
 % deptoolbox - returns more info but is not recursive
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 2, recache = false; end
 tbdir = fullfile(matlabroot(), 'toolbox', TB);
 if ~exist(tbdir, 'file')

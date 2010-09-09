@@ -1,3 +1,6 @@
+
+% This file is from matlabtools.googlecode.com
+
 function [Xtest,xrange, yrange] = makeGrid2d(data, expand)
 
 if nargin < 2, expand = 0.05; end

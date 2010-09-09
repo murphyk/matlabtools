@@ -2,6 +2,9 @@ function b = acyclic(adj_mat, directed)
 % ACYCLIC Returns true iff the graph has no (directed) cycles.
 % b = acyclic(adj_mat, directed)
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin < 2, directed = 1; end
 
 if directed

@@ -86,6 +86,9 @@ function d = defaultDict(keys, values, default)
 %     tedious isKey or isfield checks.
 % PMTKslow
 %%
+
+% This file is from matlabtools.googlecode.com
+
 ws = warning('query', 'MATLAB:printf:BadEscapeSequenceInFormat'); 
 warning('off', 'MATLAB:printf:BadEscapeSequenceInFormat'); 
 SetDefaultValue(1, 'keys',    {});

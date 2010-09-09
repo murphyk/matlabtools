@@ -1,6 +1,9 @@
 function hideFigures()
 % Hide all future generated figures until the showFigures() function is run
 
+% This file is from matlabtools.googlecode.com
+
+
 fprintf('figure display has been turned off\n'); 
 set(0, 'defaultFigureVisible', 'off');
 set(0, 'defaultAxesVisible', 'off');

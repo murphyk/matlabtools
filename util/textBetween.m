@@ -10,6 +10,9 @@ function T = textBetween(text, ld, rd)
 %  myTexFile
 %%
 
+% This file is from matlabtools.googlecode.com
+
+
 toks = tokenize(text, [ld, rd]); 
 if numel(toks) < 2
     T = {};

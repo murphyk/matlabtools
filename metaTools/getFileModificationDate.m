@@ -3,6 +3,9 @@ function [datestr, time] = getFileModificationDate(file)
 %
 %% Example 
 
+% This file is from matlabtools.googlecode.com
+
+
 d = dir(file); 
 toks = tokenize(d.date, ' '); 
 [datestr, time] = toks{:};

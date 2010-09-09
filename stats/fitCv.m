@@ -23,6 +23,9 @@ function [model, bestParam, mu, se] = ...
 % mu(i) - mean loss for params(i,:)
 % se(i) - standard error for mu(i,:)
 %%
+
+% This file is from matlabtools.googlecode.com
+
 wstate = warning('query', 'MATLAB:nearlySingularMatrix');
 warning('off', 'MATLAB:nearlySingularMatrix');
 

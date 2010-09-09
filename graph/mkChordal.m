@@ -5,6 +5,9 @@ function [G, fill_ins] = mkChordal(G, order)
 % fill_ins(i,j) = 1 iff we add a fill-in arc between i and j.
 % PMTKmodified Matt Dunham
 
+% This file is from matlabtools.googlecode.com
+
+
 MG = G;
 n = length(G);
 eliminated = false(1, n);

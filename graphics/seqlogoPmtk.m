@@ -18,6 +18,9 @@ function varargout = seqlogoPmtk(p, ssCorr)
 % h        - bar series handle
 %
 
+% This file is from matlabtools.googlecode.com
+
+
 %% if no input, display a test matrix
 if nargin == 0; 
     p = ['cgatacggggtcgaa'

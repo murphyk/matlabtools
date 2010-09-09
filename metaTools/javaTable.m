@@ -2,6 +2,9 @@ function javaTable(data,columnNames,tableName)
 % Display a cell array of strings in a java JTable
 % PMTKneedsMatlab 
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if(isempty(data))
     fprintf('\ndata cannot be empty\n');
     return;

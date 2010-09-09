@@ -6,6 +6,9 @@ function previewPublished(fname, evalCode, outputDir)
 %% Example
 % publishPreview mixGaussVbDemoFaithful
 % PMTKneedsMatlab 
+
+% This file is from matlabtools.googlecode.com
+
 close all;
 SetDefaultValue(2, 'evalCode', true);
 SetDefaultValue(3, 'outputDir', tempdir()); 

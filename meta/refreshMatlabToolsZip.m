@@ -3,6 +3,9 @@ function refreshMatlabToolsZip()
 % Requires an svn installation, (not just e.g. tortoise svn)
 % All files must be checked into svn
 %% export
+
+% This file is from matlabtools.googlecode.com
+
 tmpRoot = tempname();
 mkdir(tmpRoot); 
 tmpPath = fullfile(tmpRoot, 'matlabTools');

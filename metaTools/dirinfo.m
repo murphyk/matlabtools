@@ -5,6 +5,9 @@ function info = dirinfo(directory)
 %fields, path, m, mat, mex, mdl, p, classes, packages.  This is effectively
 %a recursive version of the built in "what" command.
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin == 0
     directory = '.';
 end

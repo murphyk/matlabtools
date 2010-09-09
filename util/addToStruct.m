@@ -6,6 +6,9 @@ function S = addToStruct(S, varargin)
 % *** does not support anonymous variables as in addToStruct(S, 25, 2+3), etc ***
 % 
 %%
+
+% This file is from matlabtools.googlecode.com
+
 for i=2:nargin
     S.(inputname(i)) = varargin{i-1};
 end

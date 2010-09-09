@@ -16,6 +16,9 @@ function [tags, lines, codeLength, text] = tagfinder(filename, tagList)
 %                not blank spaces)
 %   text  - the full text of the file
 %%
+
+% This file is from matlabtools.googlecode.com
+
 text = getText(filename);
 codeLength = numel(filterCell(cellfuncell(@(s)strtrim(s), text), @(s)~isempty(s)));
 tags = {};

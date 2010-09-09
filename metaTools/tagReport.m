@@ -29,6 +29,9 @@ function I = tagReport(root, excludedAuthors)
 %                    containing directory structure. 
 %%
 %
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 2
     excludedAuthors = {'Matt Dunham', 'Kevin Murphy'};
 end

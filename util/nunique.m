@@ -33,6 +33,9 @@ function N = nunique(X, dim)
 %      4
 %      4
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin == 1
     dim = find(size(X)~=1, 1);
     if isempty(dim), dim = 1; end

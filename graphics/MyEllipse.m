@@ -27,6 +27,9 @@ function h=MyEllipse(varargin)
 %    NOTES: C must be positive definite for this function to work properly.
 % Written by somebody anonymous + Modified by Emtiyaz
 
+% This file is from matlabtools.googlecode.com
+
+
 default_properties = struct(...
   'C', [], ... % The covaraince matrix (required)
   'mu', [], ... % Center of ellipse (optional)

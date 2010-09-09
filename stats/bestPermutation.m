@@ -6,6 +6,9 @@ function [p, nerrs] = bestPermutation(source, target)
 % p = 
 %     2     2     2     1     1     1     3     3     3
 %%
+
+% This file is from matlabtools.googlecode.com
+
 nlabels = nunique([rowvec(source), rowvec(target)]); 
 allperms = perms(1:nlabels);
 errs = zeros(1, size(allperms, 1));

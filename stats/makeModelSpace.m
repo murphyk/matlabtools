@@ -12,6 +12,9 @@ function models = makeModelSpace(varargin)
 %
 % Supports more than 2 dimensions, i.e. makeModelSpace(1:3, 2:4, 7:9, 2:3)
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if(nargin == 1)
     space = varargin{1}';
 else

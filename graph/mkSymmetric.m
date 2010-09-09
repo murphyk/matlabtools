@@ -1,6 +1,9 @@
 function M = mkSymmetric(M)
 
 %Mtest = M;    
+
+% This file is from matlabtools.googlecode.com
+
 Mt = M';
 M(M==0) = Mt(M==0);
     

@@ -1,6 +1,9 @@
 function deleteIdenticalShadowedCopies()
 % Search through every m-file and delete exact char for char duplicates
 
+% This file is from matlabtools.googlecode.com
+
+
 m = mfiles(pmtk3Root());
 for i=1:numel(m)
     w = which('-all',m{i});

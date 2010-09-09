@@ -22,6 +22,9 @@ function filelist = depfunFast(fn,recursive)
 %PMTKauthor Malcolm Wood
 %PMTKurl http://www.mathworks.com/matlabcentral/fileexchange/10702
 
+% This file is from matlabtools.googlecode.com
+
+
 if ~ischar(fn)
     error('First argument must be a string');
 end

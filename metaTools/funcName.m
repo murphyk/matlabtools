@@ -2,6 +2,9 @@ function name = funcName(fn)
 % Just like built in func2str except it removes @() prefixes and ()
 % suffixes. 
 
+% This file is from matlabtools.googlecode.com
+
+
 s = func2str(fn); 
 if startswith(s, '@')
     toks = tokenize(s, '()');

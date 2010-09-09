@@ -28,6 +28,9 @@
 %
 % Copyright (C) Oliver Woodford 2008
 
+% This file is from matlabtools.googlecode.com
+
+
 % This function is inspired by Peder Axensten's SAVEFIG (fex id: 10889)
 % which is itself inspired by EPS2PDF (fex id: 5782)
 % The idea of editing the EPS file to change line styles comes from Jiro

@@ -1,6 +1,9 @@
 function [X, knots] = splineBasis(x, K, knots)
 %% Spline basis function expansion
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin < 2, K = 100; end
 if nargin < 3, knots = linspace(min(x), max(x), K); end
 K = length(knots);

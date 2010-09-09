@@ -21,6 +21,9 @@ function sub_s=subsets1(s, k)
 %PMTKauthor Raanan Yehezkel
 %PMTKdate 2004
 
+% This file is from matlabtools.googlecode.com
+
+
 if k<0 % special case
    error('subset size must be positive');
 elseif k==0 % special case

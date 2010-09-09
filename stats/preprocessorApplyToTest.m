@@ -1,6 +1,9 @@
 function [X] = preprocessorApplyToTest(preproc, X)
 % Transform the test data in the same way as the training data
 
+% This file is from matlabtools.googlecode.com
+
+
 if isempty(preproc), return; end
 
 if isfield(preproc, 'Xmu')

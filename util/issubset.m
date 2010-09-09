@@ -5,6 +5,9 @@ function bool = issubset(A, B)
 % ans =
 %      1
 %
+
+% This file is from matlabtools.googlecode.com
+
 bool = all(ismember(A, B));
 
 end

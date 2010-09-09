@@ -2,6 +2,9 @@ function G = mkTreeDag(K, depth)
 %% Create a K-ary tree structured dag
 % A depth of 1 means only the root. 
 %%
+
+% This file is from matlabtools.googlecode.com
+
 nnodes = ((K.^depth)-1)/(K-1);
 G = zeros(nnodes, nnodes); 
 Q = 1;

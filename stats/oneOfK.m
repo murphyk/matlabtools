@@ -65,6 +65,9 @@ function [yy,map] = oneOfK(y, K)
 %     'no'
 %     'yes'
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if(ischar(y)), y = cellstr(y);end      % character arrays, where rows are labels
 
 [map,junk,ymapped] = unique(y);                                                 %#ok

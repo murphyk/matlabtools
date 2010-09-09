@@ -19,6 +19,9 @@ function [FPrate, TPrate, AUC, thresholds] = computeROC(confidence, testClass)
 %PMTKauthor Vlad Magdin
 % UBC
 
+% This file is from matlabtools.googlecode.com
+
+
 % break ties in scores
 S = rand('state');
 rand('state',0); 

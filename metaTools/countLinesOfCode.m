@@ -2,6 +2,9 @@ function n = countLinesOfCode(f, excludeComments)
 % Count the number of lines of code in a function.
 % If excludeComments is true, (default) then comments are excluded.
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin < 2, excludeComments = true; end
 
 text = getText(f); 

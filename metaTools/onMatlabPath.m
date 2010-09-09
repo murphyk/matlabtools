@@ -7,6 +7,9 @@ function answer = onMatlabPath(p, loose)
 %
 %   onMatlabPath 'C:\pmtkData'
 %%
+
+% This file is from matlabtools.googlecode.com
+
 SetDefaultValue(2, 'loose', false);
 if loose
     answer = any(cellfun(@(s)isSubstring(p, s), tokenize(path(), ';')));

@@ -65,6 +65,9 @@ function varargout = processArgs(args,varargin)
 %   [a,b,c,d] = processArgs(varargin,'*-first',[],'*+-second',ProbDist(),'-third',18,'+-fourth',23);
 % end
     %%
+
+% This file is from matlabtools.googlecode.com
+
     PREFIX = '-';   % prefix that must precede the names of arguments. 
     REQ    = '*';   % require the argument
     TYPE   = '+';   % check the type of the arg against the default type

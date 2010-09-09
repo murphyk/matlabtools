@@ -17,5 +17,8 @@ function enum = enumerate(strings)
 %        zeta: 6
 %         eta: 7
 
+% This file is from matlabtools.googlecode.com
+
+
 enum = createStruct(cellfuncell(@genvarname, strings), num2cell(1:numel(strings)));
 end

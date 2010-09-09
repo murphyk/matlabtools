@@ -6,6 +6,9 @@ function [T,Z] = mkStochastic(T)
 % If T is a matrix, each row will sum to 1.
 % If T is a 3D array, then sum_k T(i,j,k) = 1 for all i,j.
 
+% This file is from matlabtools.googlecode.com
+
+
 % Set zeros to 1 before dividing
 % This is valid since S(j) = 0 iff T(i,j) = 0 for all j
 

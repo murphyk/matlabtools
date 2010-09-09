@@ -30,6 +30,9 @@ function htmlLink = texifyFormula(str, fname, directory)
 %
 %%
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin < 3
     directory = pwd;
 end

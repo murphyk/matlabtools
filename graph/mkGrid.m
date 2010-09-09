@@ -11,6 +11,9 @@ function G = mkGrid(M, N, doPlot)
 % Suggested drawNetwork layout: Matrixlayout(M, N) as in 
 % drawNetwork(G, '-undirected', true, '-layout', Matrixlayout(M, N)); 
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 1
     N = 5;
 end

@@ -3,6 +3,9 @@ function A = padOnes(data, ndx, sz)
 % Returns a vector or matrix with dimensions sz, with ones everywhere
 % except at linear indices ndx, where the corresponding entry from data
 % is put. 
+
+% This file is from matlabtools.googlecode.com
+
     if isscalar(sz)
         sz = [sz, 1]; 
     end

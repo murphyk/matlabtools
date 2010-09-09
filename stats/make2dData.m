@@ -3,6 +3,9 @@ function [data, labels] = make2dData(ndata, Nclasses)
 % Generate mixture of 2-3 Gaussians in two dimensional space
 % Based on dem2data from netlab
 
+% This file is from matlabtools.googlecode.com
+
+
 data = randn(ndata, 2);
 
 % Cluster centres

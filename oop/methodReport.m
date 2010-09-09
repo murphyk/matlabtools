@@ -3,6 +3,9 @@ function  methodReport(varargin)
 % Does not inlcude class constructors. By default, it only shows
 % classes that are either abstract or contribute a new method. 
 
+% This file is from matlabtools.googlecode.com
+
+
 %
 % LEGEND
 % 'A'   for Abstract    (has only the abstract definition, either local or inherited)

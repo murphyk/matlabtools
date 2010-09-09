@@ -1,6 +1,9 @@
 %% Demo of minimum spanning tree
 % Example from Cormen, Leisersen, Rivest p508
 
+% This file is from matlabtools.googlecode.com
+
+
 a=1; b=2; c=3; d=4; e=5; f=6; g=7; h=8; i=9;
 G = zeros(9,9);
 G(a,b)=4; G(a,h)=8;

@@ -1,5 +1,8 @@
 function showImmediateToolboxDependencies(fname)
 %% Display the immediate toolbox dependencies of a function
+
+% This file is from matlabtools.googlecode.com
+
 if nargin == 0;
     fname = currentlyOpenFile(true);
 end

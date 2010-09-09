@@ -2,6 +2,9 @@ function [A,cost] = minSpanTreePrimSimple(C)
 % set absent edges to infinite weight
 % See mstDemo for a test
 % See Aho, Hopcroft, Ullman "Data structures and algorithms" 1983, p235
+
+% This file is from matlabtools.googlecode.com
+
 n = length(C);
 A = zeros(n);
 closest = ones(1,n);

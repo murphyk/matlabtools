@@ -16,6 +16,9 @@ function searchAndReplaceLine(fname, oldText, newText)
 % searchAndReplaceLine('searchAndReplaceLine', '%% Example', '% Example');
 %%
 
+% This file is from matlabtools.googlecode.com
+
+
 f = which(fname); 
 src = getText(f); 
 dirty = false;

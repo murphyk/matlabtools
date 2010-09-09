@@ -20,6 +20,9 @@ function l = filelist(directory, filemask, recursive)
 % filelist(pmtk3Root(), {'*.mex*', '*.exe'}) is the union of the above two calls
 %
 %%
+
+% This file is from matlabtools.googlecode.com
+
 SetDefaultValue(1, 'directory', pwd());
 SetDefaultValue(2, 'filemask', '*.*');
 SetDefaultValue(3, 'recursive', true);

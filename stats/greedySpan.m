@@ -5,6 +5,9 @@ function ndx = greedySpan(set, subsets)
 %
 % If no solution can be found, [] is returned.
 %%
+
+% This file is from matlabtools.googlecode.com
+
 sizes = cellfun(@numel, subsets);
 
 ndxBit = false(1, numel(subsets));

@@ -1,6 +1,9 @@
 function b = pmtkGraphIsDag(adj_mat)
 % Returns true iff the graph has no directed cycles.
 
+% This file is from matlabtools.googlecode.com
+
+
 if bioinfoToolboxInstalled()
     b = graphisdag(sparse(adj_mat));
 else

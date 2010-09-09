@@ -8,6 +8,9 @@ function compileC(root, excludedNames)
 %%
 % PMTKneedsMatlab 
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 1, root = pmtk3Root(); end
 
 if nargin < 2

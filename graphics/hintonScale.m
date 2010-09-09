@@ -4,6 +4,9 @@ function [] = hintonScale(varargin)
 % The user can specify two optional arguments
 % 'map'   which colormap to use
 
+% This file is from matlabtools.googlecode.com
+
+
   if nargin <= 2
     X = varargin{1}{1};
     if(numel(varargin{1}) > 1)

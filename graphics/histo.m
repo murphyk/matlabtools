@@ -12,6 +12,9 @@ function histo(x,N,odd,scale)
 % RETURNS: nothing, simply plots 
 % ------------------------------------------------------------
 
+% This file is from matlabtools.googlecode.com
+
+
 %PMTKauthor Anders Holtsberg
 %PMTKdate December 14, 1994
 

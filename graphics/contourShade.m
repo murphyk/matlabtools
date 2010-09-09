@@ -1,5 +1,8 @@
 function h = contourShade(X, Y, Z, C, varargin)
 % Just like countourf but with a better interface. 
+
+% This file is from matlabtools.googlecode.com
+
     
    [junk1, h, junk2] = contourf(X, Y, Z, C); 
    if nargin > 4

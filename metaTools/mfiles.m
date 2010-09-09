@@ -17,6 +17,9 @@ function m = mfiles(source, varargin)
 %% See also
 % filelist, cfilelist, dirs
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if nargin == 0
     source = pwd();
 end

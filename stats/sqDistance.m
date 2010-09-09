@@ -11,6 +11,9 @@ function d = sqDistance(p, q, pSOS, qSOS)
 % qSOS = sum(q.^2, 2) and is calculated if not specified
 %
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if(nargin < 4)
     pSOS = sum(p.^2, 2);
     qSOS = sum(q.^2, 2);

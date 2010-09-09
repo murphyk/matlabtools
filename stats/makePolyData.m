@@ -2,6 +2,9 @@ function [xtrain, ytrain, xtest, ytest] = makePolyData(n)
 
 %error('deprecated')
 
+% This file is from matlabtools.googlecode.com
+
+
 % based on code by Romain Thibaux
 % (Lecture 2 from http://www.cs.berkeley.edu/~asimma/294-fall06/)
 

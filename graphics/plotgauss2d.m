@@ -3,6 +3,9 @@ function h=plotgauss2d(mu, Sigma)
 % h=plotgauss2(mu, Sigma)
 %
 
+% This file is from matlabtools.googlecode.com
+
+
 h = plotcov2(mu, Sigma);
 return;
 end

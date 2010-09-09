@@ -3,6 +3,9 @@ function matlabToolsLocStatsReport()
 %
 % PMTKneedsMatlab
 %% Settings
+
+% This file is from matlabtools.googlecode.com
+
 excludeComments             = false;
 directories                 = {'graph', 'graphics', 'util', 'stats', 'oop', 'metaTools'};
 excludedAuthors             = {'Matt Dunham', 'Kevin Murphy'}; 

@@ -5,6 +5,9 @@ function  h = viewClassTree(varargin)
 % Classes must use classdef syntax not old style
 % PMTKneedsMatlab 2008
 
+% This file is from matlabtools.googlecode.com
+
+
 args = process_options(varargin,'source',pwd(),'ignoreDirs',{'unitTests',fullfile('util','graphs','graphlayout')},'topOnly',false,'topClass',[]);
 [topClass,unusedArgs] = extractArgs(4,args);
 layout = Treelayout();

@@ -6,6 +6,9 @@ function C = msxfun(fn, varargin)
 % bsxfun(fn, bsxfun(fn, X1, X2), X3)
 %% Example
 % msxfun(@times, rand(100, 1), rand(100, 100), rand(1, 100))
+
+% This file is from matlabtools.googlecode.com
+
 n = nargin - 1;
 C = bsxfun(fn, varargin{1}, varargin{2});
 for i=3:n

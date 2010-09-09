@@ -5,6 +5,9 @@ function Sigma = partitionedCov(X, y, C)
 % Sigma is of size d-by-d-by-C
 % See also partitionedMean, partitionedSum
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 3
     C = nunique(y);
 end

@@ -13,6 +13,9 @@ function shadowFunction(fname, output, quiet)
 % shadowFunction({'clear', 'cls', 'pause', 'keyboard', 'placeFigures', 'input'});
 % removeShadows()
 %
+
+% This file is from matlabtools.googlecode.com
+
 SetDefaultValue(2, 'output', []); 
 SetDefaultValue(3, 'quiet', false); 
 warning('off', 'MATLAB:dispatcher:nameConflict');

@@ -14,6 +14,9 @@ function  H = graystep(B, d)
 %  is adapted from  J. Boothroyd's Algorithm #246  on  p. 701 of
 %  Comm. ACM vol. 7 (1964).               W. Kahan,  8 July 2007
 
+% This file is from matlabtools.googlecode.com
+
+
 H = (B(:)' ~= 0);
 n = length(H);
 j = n+1;

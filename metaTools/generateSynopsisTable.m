@@ -2,6 +2,9 @@ function generateSynopsisTable(directory, outputFile, rootDir)
 %% Create an html table of files and one line descriptions for a directory
 % PMTKneedsMatlab 
 %%
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 2, outputFile = ''; end
 files        = filelist(directory, '*.m', true);
 files        = files(sortidx(lower(files))); 

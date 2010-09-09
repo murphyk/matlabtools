@@ -2,6 +2,9 @@ function S = htmFormatText(varargin)
 %% Format a multiline comment for html 
 % This is just like multiLineString except it adds html breaks <br> to the
 % end of each line. 
+
+% This file is from matlabtools.googlecode.com
+
 stack = dbstack('-completenames');
 if numel(stack) < 2
     error('This function cannot be called from the command prompt');

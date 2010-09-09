@@ -98,6 +98,9 @@ function varargout = placeFigures(varargin)
 % 
 % 
 %%
+
+% This file is from matlabtools.googlecode.com
+
                                                                                     
 [nrows,ncols,depth,total,square,monitor,newfigs,minwidth,minheight,intergapH,...
 intergapV,gapH,lowergap,uppergap,toolsize] = process_options(varargin,...

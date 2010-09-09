@@ -12,6 +12,9 @@ function T = sumOver(T, sum_over)
 %     5     7
 %     6     8
 
+% This file is from matlabtools.googlecode.com
+
+
 for i=1:numel(sum_over)
     T = sum(T, sum_over(i));
 end

@@ -6,6 +6,9 @@ function M = classConfMat(ytrue, yhat)
 % have two classes 1 and 1000 don't use this function, however, if you have
 % classes 1:9 but are missing class 7 for example, it will do the right
 % thing
+
+% This file is from matlabtools.googlecode.com
+
 C = max(unique(ytrue));
 Cmin = min(unique(ytrue));
 Ccount=C-Cmin+1;

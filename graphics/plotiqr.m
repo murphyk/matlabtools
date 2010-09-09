@@ -7,6 +7,9 @@ set(iqrplot,'YTick',[]);
 switch class(X)
     case 'double'
         % Data is simply numeric
+
+% This file is from matlabtools.googlecode.com
+
         axes(distplot);
         ksdensity(X);
         

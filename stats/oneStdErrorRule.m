@@ -3,6 +3,9 @@ function idx_opt = oneStdErrorRule(res_mean, res_std, dof)
 % We assume models are ordered from least complex to most complex
 % If not, pass in the dof field to figure out the right order
 
+% This file is from matlabtools.googlecode.com
+
+
 n = length(res_mean);
 if nargin < 3, dof = 1:n; end
 

@@ -1,6 +1,9 @@
 function files = currentlyOpenFiles()
 % Return a cell array of currently open files
 % PMTKneedsMatlab 
+
+% This file is from matlabtools.googlecode.com
+
 E = com.mathworks.mlservices.MLEditorServices;
 jdocs = E.builtinGetOpenDocumentNames();
 ndocs = numel(jdocs);

@@ -32,6 +32,9 @@ function out = argout(n, fn, varargin)
 %%
 % In matlab 2009b one can finally replace j/junk with the ~ character
 % but we don't here for backwards compatibility. 
+
+% This file is from matlabtools.googlecode.com
+
 if ischar(fn), fn = str2func(fn); end
 switch n
     case 1

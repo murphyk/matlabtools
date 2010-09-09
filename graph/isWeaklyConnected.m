@@ -4,5 +4,8 @@ function answer = isWeaklyConnected(G)
 % directed edges with undirected edges produces a connected (undirected)
 % graph. From http://en.wikipedia.org/wiki/Connectivity_(graph_theory)
 %%
+
+% This file is from matlabtools.googlecode.com
+
 answer = all(colvec(reachability_graph(mkSymmetric(G)))); 
 end

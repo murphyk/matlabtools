@@ -16,6 +16,9 @@ function out = crossProduct(varargin)
 %     1     4     4
 %     2     4     4
 
+% This file is from matlabtools.googlecode.com
+
+
 out = gridSpace(varargin{:});  % works for any number of dimensions. 
 %{
 switch nargin

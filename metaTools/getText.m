@@ -1,6 +1,9 @@
 function text = getText(textFile)
 % Extract the text from a file. The output is a cell array - each cell is a line
 % from the file. See also writeText()
+
+% This file is from matlabtools.googlecode.com
+
 text = {};
 w = which(textFile);
 if ~isempty(w)

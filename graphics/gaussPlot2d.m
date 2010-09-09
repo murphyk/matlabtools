@@ -1,6 +1,9 @@
 function h=gaussPlot2d(mu, Sigma, varargin)
 % Plot an ellipse representing the covariance matrix of a Gaussian
 % 
+
+% This file is from matlabtools.googlecode.com
+
 if size(Sigma) ~= [2 2], error('Sigma must be a 2 by 2 matrix'); end
 [color, plotMarker] = process_options(varargin, 'color', 'r', 'plotMarker', true);
 

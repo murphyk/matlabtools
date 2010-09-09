@@ -10,6 +10,9 @@ function varargout = structvals(S, varargin)
 % model.Sigma = 2*eye(5)
 % model.dof = 5
 % [mu, Sigma, dof] = structvals(model, {'mu', 'Sigma', 'dof'})
+
+% This file is from matlabtools.googlecode.com
+
 if nargin < 2
    error('You must specify which fields you want to extract');  
 end

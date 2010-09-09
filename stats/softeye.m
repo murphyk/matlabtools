@@ -3,6 +3,9 @@ function M = softeye(K, p)
 %
 % M is a K x K matrix.
 
+% This file is from matlabtools.googlecode.com
+
+
 M = p*eye(K);
 q = 1-p;
 for i=1:K

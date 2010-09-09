@@ -21,6 +21,9 @@ function [M, counts] = partitionedMean(X, y, C)
 % counts = histc(y, 1:C);
 %%
 
+% This file is from matlabtools.googlecode.com
+
+
 if nargin < 3
     C = nunique(y);
 end

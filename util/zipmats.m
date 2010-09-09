@@ -14,5 +14,8 @@ function z = zipmats(varargin)
 % z{3} =
 %      3     6     9   102
 
+% This file is from matlabtools.googlecode.com
+
+
 z = mat2cellRows(cell2mat(cellfuncell(@(c)colvec(c), varargin)));  
 end

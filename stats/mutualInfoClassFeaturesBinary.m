@@ -1,6 +1,9 @@
 function [mi] = mutualInfoClassFeaturesBinary(X,y)
 % Mutual information between binary features and class label
 % mi(j) = I(X(j), Y)
+
+% This file is from matlabtools.googlecode.com
+
 model = naiveBayesFit(X,y);
 py = model.classPrior;
 pxy = model.theta; % pxy(c,j) = p(xj=1|y=c)

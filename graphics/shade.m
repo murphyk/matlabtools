@@ -1,3 +1,6 @@
+
+% This file is from matlabtools.googlecode.com
+
 function shade(func,lower,left,right,color,resolution)
     if(nargin < 6)
         resolution = 0.0001;

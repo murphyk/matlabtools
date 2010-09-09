@@ -3,6 +3,9 @@ function S = removeComments(S)
 % The getText function returns the text of an mfile as a cell array, this
 % function removes comments and blank lines from this cell array. 
 
+% This file is from matlabtools.googlecode.com
+
+
 blockCommentStart = cellfind(S, '%{');
 blockCommentEnd   = cellfind(S, '%}');
 ndx = [];

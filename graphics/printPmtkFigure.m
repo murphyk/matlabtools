@@ -1,6 +1,9 @@
 function printPmtkFigure(filename)
 % print current figure to specified file in .eps and .pdf formats
 
+% This file is from matlabtools.googlecode.com
+
+
 if false
   % set to false to turn off printing
    printFolder = 'C:\kmurphy\dropbox\PML\Figures\pdfFigures';

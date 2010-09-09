@@ -9,6 +9,9 @@ function S = partitionedSum(X, y, C)
 %
 % See also - partitionedMean
 
+% This file is from matlabtools.googlecode.com
+
+
 
 if nargin < 3
     C = nunique(y);
