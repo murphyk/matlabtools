@@ -9,6 +9,7 @@ if nargin > 0
 else
     flist = filelist(matlabToolsRoot(), '*.m', true);
     for i=1:numel(flist)
+        fprintf('inserting into %s\n', flist{i}); 
         insertCopyright(text, flist{i});
     end
 end
