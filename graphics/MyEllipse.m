@@ -38,7 +38,8 @@ default_properties = struct(...
   'style', '', ...  % Plot style
   'clip', inf, ...
   'intensity',1, ...
-  'facefill',1); % Clipping radius
+  'facefill',1, ...
+  'color', 'k'); % Clipping radius
 
 if length(varargin) >= 1 & isnumeric(varargin{1})
   default_properties.C = varargin{1};
@@ -78,7 +79,7 @@ scale = prop.scale;
 style = prop.style;
 intensity = prop.intensity;
 facefill = prop.facefill;
-
+color = prop.color;
 
 if conf <= 0 | conf >= 1
   error('conf parameter must be in range 0 to 1, exclusive')
@@ -135,7 +136,7 @@ if r==3 & c==3
   if nargout
     h=[h1 h2 h3 h4];
   end
-elseif r==2 & c==2
+elseif r==2 && c==2
   % Make the matrix has positive eigenvalues - else it's not a valid covariance matrix!
   if any(eig(C) <=0)
     error('The covariance matrix must be positive definite (it has non-positive eigenvalues)')
@@ -144,7 +145,8 @@ elseif r==2 & c==2
   [x,y,z] = getpoints(C,prop.clip);
   h1=plot(scale*(x0+k*x),scale*(y0+k*y),prop.style);
   set(h1,'zdata',z+1)
-  fill(scale*(x0+k*x),scale*(y0+k*y),(1-intensity).*[1 1 1],'FaceAlpha',facefill);
+  fill(scale*(x0+k*x),scale*(y0+k*y),(1-intensity).*[1 1 1],...
+    'FaceAlpha',facefill, 'facecolor', color);
   if nargout
     h=h1;
   end

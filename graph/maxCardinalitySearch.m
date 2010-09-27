@@ -21,10 +21,13 @@ numbered(initNode) = true;
 chordal = true;
 C = cell(1,d);
 numpa = zeros(1,d);
+C{1} = initNode; % KPM 27Sep10
 for i=2:d
   % For each un-numbered node, find the one with the greatest
   % number of numbered neighbors and pick it as next in order
-  score = zeros(1,d); %score2 = zeros(1,d);
+  %score = zeros(1,d); %score2 = zeros(1,d);
+  % KPM 27Sep10 to handle disconnected graphs
+  score = -1*ones(1,d); % disconnected nodes get 0, so others should be -1
   U = find(~numbered);% unnumbered verticies
   %N = find(numbered); 
   %assert(isequal(N, sort(order(1:i-1))))
@@ -60,6 +63,5 @@ for i=1:(d-1)
 end
 isLadder(d) = true;
 cliques = C(isLadder);
-
 
 end
