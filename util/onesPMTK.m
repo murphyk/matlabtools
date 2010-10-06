@@ -9,7 +9,7 @@ if isempty(sizes)
 elseif length(sizes)==1
     T = ones(sizes, 1);
 else
-    T = ones(sizes(:)');
+  T = ones(sizes(:)');
 end
 
 end
