@@ -6,6 +6,11 @@ function [Xtrain,ytrain,Xtest,ytest] = setupMnist(varargin)%binary, Ntrain, Ntes
 % ntest - [10000]
 % keepSparse - if true, do not cast to double [true]
 % classes - specify which classes you want train/test data for [0:9]
+%
+% Xtrain will be ntrain*D, where D=784
+% ytrain will be ntrain*1
+% Xtest will be ntest*D, where D=784
+% ytest will be ntest*1
 
 % This file is from matlabtools.googlecode.com
 
