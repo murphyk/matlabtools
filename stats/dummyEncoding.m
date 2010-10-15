@@ -3,6 +3,25 @@ function X_ind = dummyEncoding(X, nStates)
 % Each X(:, j) is expanded into a binary matrix of size n-by-nStates(j).
 % These matrices are then concatinated horizontally forming an
 % n-by-sum(nStates) binary matrix.
+%
+% Examples
+% oneOfK([1,2,1,3],4)
+%      1     0     0     0
+%      0     1     0     0
+%      1     0     0     0
+%      0     0     1     0
+%
+%
+%  X=[1 2 1 2; 1 2 3 3]'
+%     1     1
+%     2     2
+%     1     3
+%     2     3
+% dummyEncoding(X, [2 3])
+%     1     0     1     0     0
+%     0     1     0     1     0
+%     1     0     0     0     1
+%     0     1     0     0     1
 
 % This file is from matlabtools.googlecode.com
 

@@ -11,7 +11,7 @@ if nargin < 2, s = []; end
 if isempty(s)
   s = sqrt(sum(X.^2));
 end
-ss = repmat(s, n, 1);
-X = X./ss;
+%X = X./repmat(s, n, 1);
+X = bsxfun(@rdivide,X,s);
 
 end
