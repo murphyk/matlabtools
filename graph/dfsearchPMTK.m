@@ -23,6 +23,8 @@ function [pre, post, pred, cycle, d, f] = dfsearch(G, start, directed)
 
 % This file is from matlabtools.googlecode.com
 
+warning('dfsearchPMTK may be buggy')
+
 n     = length(G);
 S     = zeros(1, n); % store node states, 0, 1, or 2
 T     = 0;           % time step
@@ -49,8 +51,6 @@ end
 function [S, T, d, f, pred, cycle, pre, post] = ...
     visitNode(u, G, directed, S, T, d, f, pred, cycle, pre, post)
 
-  fprintf('visitNode u=%d, pred(u)=%d\n', u, pred(u))
-  if u==178, keyboard, end
 pre  = [pre u];
 S(u) = 1;
 T    = T + 1;
@@ -63,7 +63,6 @@ else
         ns = setdiffPMTK(ns, pred(u)); % don't go back to visit the guy who called you!
     end
 end
-ns
 for v = ns
     switch S(v)
         case 0, % not visited v before (tree edge)

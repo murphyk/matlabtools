@@ -1,4 +1,4 @@
-function [d, pre, post, cycle, f, pred] = dfs(adj_mat, start, directed)
+function [d, pre, post, cycle, f, pred] = dfsPMTK(adj_mat, start, directed)
 % DFS Perform a depth-first search of the graph starting from 'start'.
 % [d, pre, post, cycle, f, pred] = dfs(adj_mat, start, directed)
 %
@@ -20,11 +20,17 @@ function [d, pre, post, cycle, f, pred] = dfs(adj_mat, start, directed)
 % For a DAG, topological order = reverse(postorder).
 %
 % See Cormen, Leiserson and Rivest, "An intro. to algorithms" 1994, p478.
+%
+% Note: this recursive implementaiton will run out of stack
+% space on large graphs.
+% Use dfsGleich instead.
 
 % This file is from matlabtools.googlecode.com
 
 % dfsearchPMTK is a different implementation of this
 % that does not use global variables
+
+warning('dfsPMTK may be buggy')
 
 n = length(adj_mat);
 

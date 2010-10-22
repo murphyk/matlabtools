@@ -42,6 +42,9 @@ title('output of Prim (blue=tree)')
 printPmtkFigure('minSpanTreePrim')
 end
 
+[T3] =  mst_prim(A); % Prim
+cost3 = sum(A(find(T3)))/2;
+assert(cost3==37)
 
 %% Example from Aho, Hopcroft Ullman p234
 G = zeros(6,6);
@@ -59,6 +62,10 @@ assert(cost==15)
 
 [T2, cost2] =  minSpanTreePrim(A); % Prim
 assert(cost2==15)
+
+[T3] =  mst_prim(A); % Prim
+cost3 = sum(A(find(T3)))/2;
+assert(cost3 == 15);
 
 end
 
