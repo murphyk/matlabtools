@@ -23,6 +23,8 @@ function [d, pre, post, cycle, f, pred] = dfs(adj_mat, start, directed)
 
 % This file is from matlabtools.googlecode.com
 
+% dfsearchPMTK is a different implementation of this
+% that does not use global variables
 
 n = length(adj_mat);
 

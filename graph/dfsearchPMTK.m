@@ -49,6 +49,8 @@ end
 function [S, T, d, f, pred, cycle, pre, post] = ...
     visitNode(u, G, directed, S, T, d, f, pred, cycle, pre, post)
 
+  fprintf('visitNode u=%d, pred(u)=%d\n', u, pred(u))
+  if u==178, keyboard, end
 pre  = [pre u];
 S(u) = 1;
 T    = T + 1;
@@ -61,6 +63,7 @@ else
         ns = setdiffPMTK(ns, pred(u)); % don't go back to visit the guy who called you!
     end
 end
+ns
 for v = ns
     switch S(v)
         case 0, % not visited v before (tree edge)
